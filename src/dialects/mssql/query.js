@@ -467,10 +467,10 @@ export class MsSqlQuery extends AbstractQuery {
         autoIncrementAttributeAlias = this.model.rawAttributes[autoIncrementAttribute].field;
       }
 
-      id = id || results && results[0][this.getInsertIdField()];
+      id = id || results?.length && results[0][this.getInsertIdField()];
       id = id || metaData && metaData[this.getInsertIdField()];
-      id = id || results && results[0][autoIncrementAttribute];
-      id = id || autoIncrementAttributeAlias && results && results[0][autoIncrementAttributeAlias];
+      id = id || results?.length && results[0][autoIncrementAttribute];
+      id = id || autoIncrementAttributeAlias && results?.length && results[0][autoIncrementAttributeAlias];
 
       this.instance[autoIncrementAttribute] = id;
 
