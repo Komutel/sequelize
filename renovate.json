@@ -1,8 +1,0 @@
-{
-  "extends": [
-    "config:base",
-    ":maintainLockFilesWeekly"
-  ],
-  "semanticCommitType": "meta",
-  "semanticCommitScope": null
-}

@@ -1,0 +1,12 @@
+export declare const noRawAttributes: () => void;
+export declare const noTrueLogging: () => void;
+export declare const noStringOperators: () => void;
+export declare const noBoolOperatorAliases: () => void;
+export declare const noDoubleNestedGroup: () => void;
+export declare const unsupportedEngine: () => void;
+export declare const useErrorCause: () => void;
+export declare const scopeRenamedToWithScope: () => void;
+export declare const schemaRenamedToWithSchema: () => void;
+export declare const noSequelizeDataType: () => void;
+export declare const noModelDropSchema: () => void;
+export declare const movedSequelizeParam: () => void;
